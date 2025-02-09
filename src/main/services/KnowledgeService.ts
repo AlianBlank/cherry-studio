@@ -165,7 +165,7 @@ class KnowledgeService {
         )
       }
 
-      if (['.md'].includes(file.ext)) {
+      if (['.md', '.cs', '.json', '.yaml', '.yml'].includes(file.ext)) {
         return await ragApplication.addLoader(
           new MarkdownLoader({
             filePathOrUrl: file.path,

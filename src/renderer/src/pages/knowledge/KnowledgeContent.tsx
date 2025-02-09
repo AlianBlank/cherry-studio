@@ -33,7 +33,7 @@ interface KnowledgeContentProps {
   selectedBase: KnowledgeBase
 }
 
-const fileTypes = ['.pdf', '.docx', '.pptx', '.xlsx', '.txt', '.md']
+const fileTypes = ['.pdf', '.docx', '.pptx', '.xlsx', '.txt', '.md', '.cs', '.json', '.yaml', '.yml']
 
 const KnowledgeContent: FC<KnowledgeContentProps> = ({ selectedBase }) => {
   const { t } = useTranslation()
